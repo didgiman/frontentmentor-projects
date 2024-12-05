@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Recipe page</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+            body {
+                font-family: "Outfit", sans-serif;
+                background-color: hsl(30, 54%, 90%);
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: "Young Serif", serif;
+                color: hsl(24, 5%, 18%);
+            }
+
+            aside h3 {
+                font-family: "Outfit", sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        </style>
+    </head>
+
+    <body class="flex justify-center">
+        <main class="bg-white w-full sm:w-10/12 lg:w-6/12 sm:p-10 sm:my-24 sm:rounded-2xl">
+            <img src="assets/images/image-omelette.jpeg" alt="omelette" class="w-full sm:rounded-xl" />
+
+            <div class="p-8 sm:p-0 sm:pt-6">
+                <h1 class="text-4xl py-4">Simple Omelette Recipe</h1>
+
+                <p>
+                    An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+                </p>
+
+                <aside class="bg-rose-50 p-4 my-8 rounded-xl">
+                    <h2 class="text-xl text-rose-800 font-bold">Preparation time</h2>
+
+                    <ul class="list-disc">
+                        <li class="marker:text-rose-800 ml-6 my-4 pl-2"><b>Total:</b> Approximately 10 minutes</li>
+                        <li class="marker:text-rose-800 ml-6 my-4 pl-2"><b>Preparation:</b> 5 minutes</li>
+                        <li class="marker:text-rose-800 ml-6 my-4 pl-2"><b>Cooking:</b> 5 minutes</li>
+                    </ul>
+                </aside>
+
+                <section>
+                    <h2 class="text-3xl text-yellow-800">Ingredients</h2>
+                    <ul class="list-disc">
+                        <li class="marker:text-yellow-800 ml-6 my-4 pl-2">2-3 large eggs</li>
+                        <li class="marker:text-yellow-800 ml-6 my-4 pl-2">Salt, to taste</li>
+                        <li class="marker:text-yellow-800 ml-6 my-4 pl-2">Pepper, to taste</li>
+                        <li class="marker:text-yellow-800 ml-6 my-4 pl-2">1 tablespoon of butter or oil</li>
+                        <li class="marker:text-yellow-800 ml-6 my-4 pl-2">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+                    </ul>
+                </section>
+
+                <hr class="h-px my-8 bg-gray-200 border-0" />
+
+                <section>
+                    <h2 class="text-3xl text-yellow-800">Instructions</h2>
+
+                    <ol class="list-decimal list-outside">
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2">
+                            <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+                        </li>
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2"><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2">
+                            <b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+                        </li>
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2">
+                            <b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the
+                            omelette.
+                        </li>
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2">
+                            <b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+                        </li>
+                        <li class="marker:text-yellow-800 marker:font-bold ml-6 my-4 pl-2"><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+                    </ol>
+                </section>
+
+                <hr class="h-px my-8 bg-gray-200 border-0" />
+
+                <section>
+                    <h2 class="text-3xl text-yellow-800 pb-4">Nutrition</h2>
+
+                    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+                    <table class="table-auto w-full mt-4">
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="pl-8">Calories</td>
+                                <td class="font-bold text-yellow-800 py-3">277kcal</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="pl-8">Carbs</td>
+                                <td class="font-bold text-yellow-800 py-3">0g</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="pl-8">Protein</td>
+                                <td class="font-bold text-yellow-800 py-3">20g</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-8">Fat</td>
+                                <td class="font-bold text-yellow-800 py-3">22g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

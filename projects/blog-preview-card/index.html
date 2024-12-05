@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Figtree", sans-serif;
+    }
+    
+    .yellowbg {
+      background-color: hsl(47, 88%, 63%);
+    }
+  </style>
+</head>
+
+<body class="yellowbg flex items-center justify-center h-screen">
+
+  <main role="main"
+    class="w-96 bg-white mx-auto p-5 rounded-2xl border border-black drop-shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+
+    <div>
+      <img src="assets/images/illustration-article.svg" alt="Article illustration" class="w-full rounded-xl">
+    </div>
+
+    <div class="pt-6 pb-3">
+      <div class="inline-block yellowbg text-sm font-bold px-3 py-1 rounded">Learning</div>
+    </div>
+
+    <div class="text-sm font-medium">Published 21 Dec 2023</div>
+
+    <h1 class="text-2xl font-extrabold pt-4 pb-3 text-gray-950 hover:text-yellow-400 hover:cursor-pointer">HTML & CSS foundations</h1>
+
+    <p class="text-gray-500">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+
+    <div class="flex items-center mt-6 mb-2">
+      <img src="assets/images/image-avatar.webp" alt="Avatar" class="w-8 rounded-full">
+      <span class="ml-3 font-extrabold text-sm">Greg Hooper</span>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

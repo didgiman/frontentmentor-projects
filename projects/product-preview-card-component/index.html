@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+            body {
+                background-color: hsl(30, 38%, 92%);
+            }
+            .font-heading {
+                font-family: "Fraunces", serif;
+            }
+            .font-content {
+                font-family: "Montserrat", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen flex items-center justify-center">
+        <main class="container flex flex-col md:flex-row max-w-sm md:max-w-xl bg-white rounded-xl overflow-hidden mx-4">
+            <picture class="flex-1">
+                <source media="(max-width: 767px)" srcset="./images/image-product-mobile.jpg" />
+                <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg" />
+                <img src="./images/image-product-mobile.jpg" alt="Perfume bottle" />
+            </picture>
+            <div class="p-6 space-y-4 flex-1">
+                <div class="uppercase font-content tracking-widest text-slate-700">Perfume</div>
+                <h1 class="font-heading text-3xl font-bold text-gray-800">Gabrielle Essence Eau De Parfum</h1>
+                <p class="text-slate-700">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="flex items-center">
+                    <span class="inline-block font-heading font-bold text-3xl mr-4 text-emerald-700">$149.99</span>
+                    <span class="line-through text-slate-700">$169.99</span>
+                </div>
+                <div class="flex">
+                    <button class="bg-emerald-700 w-full rounded-lg py-3 text-white flex items-center justify-center hover:bg-emerald-900"><img src="./images/icon-cart.svg" class="mr-3" alt="">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

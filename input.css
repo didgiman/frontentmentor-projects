@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+    @apply border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition;
+}
+.item-link {
+    @apply p-5 inline-block w-full;
+}
