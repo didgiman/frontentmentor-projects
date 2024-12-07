@@ -737,12 +737,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 1024px){
-  .card{
-    max-width: 350px;
-  }
-}
-
 @media (min-width: 768px){
   .md\:grid{
     display: grid;

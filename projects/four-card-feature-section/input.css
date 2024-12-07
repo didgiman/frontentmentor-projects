@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .card {
-    @apply rounded-md bg-white space-y-3 shadow-2xl p-7 border-t-4 lg:max-w-[350px];
+    @apply rounded-md bg-white space-y-3 shadow-2xl p-7 border-t-4;
 }
