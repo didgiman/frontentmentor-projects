@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Article preview component</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body class="bg-fem-lightGrayishBlue">
+        <div class="flex flex-col min-h-screen justify-center items-center p-6">
+            <main
+                class="container md:w-[730px] mx-auto bg-white rounded-xl flex flex-col md:flex-row shadow-lg relative">
+                <header
+                    class="md:min-w-[310px] h-[200px] md:h-auto bg-no-repeat bg-[center_top_-15px] md:bg-[center_left] rounded-t-xl md:rounded-l-xl md:rounded-r-none"></header>
+                <div class="pt-6 pb-5 px-8 md:pt-3 md:pl-10 bg-white rounded-b-xl md:rounded-r-xl">
+                    <h1 class="font-bold text-base md:text-xl text-fem-veryDarkGrayishBlue py-4 md:pb-2 md:pt-6">
+                        Shift the overall look and feel by adding these wonderful touches to furniture in your home
+                    </h1>
+                    <p class="text-fem-desaturatedDarkBlue text-[13px] font-medium pr-2 md:pr-0">
+                        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+                        uninviting. I’ve got some simple tips to help you make any room feel complete.
+                    </p>
+                    <div class="flex flex-row pt-6 md:pt-6 md:pb-2 gap-4">
+                        <img src="images/avatar-michelle.jpg" class="rounded-full w-10 h-10" alt="" />
+                        <div>
+                            <div class="text-fem-veryDarkGrayishBlue font-bold text-sm">Michelle Appleton</div>
+                            <div class="text-fem-grayishBlue text-sm">28 Jun 2020</div>
+                        </div>
+                        <div class="flex items-center justify-end flex-1">
+                            <div
+                                id="sharebutton"
+                                class="bg-fem-lightGrayishBlue rounded-full w-8 h-8 flex items-center justify-center cursor-pointer">
+                                <img src="images/icon-share.svg" alt="Share" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="sharepane"
+                    class="hidden bg-fem-veryDarkGrayishBlue flex-row px-8 pb-6 pt-4 md:py-4 space-x-4 items-center md:justify-center absolute bottom-0 w-full md:w-[280px] md:bottom-24 md:right-[-100px] rounded-b-xl md:rounded-xl md:shadow-xl">
+                    <div class="uppercase text-fem-grayishBlue tracking-[.5em] text-[13px]">Share</div>
+                    <div class="flex space-x-4 items-center">
+                        <a href="#"><img src="images/icon-facebook.svg" class="w-6 h-6" alt="Facebook" /></a>
+                        <a href="#"><img src="images/icon-twitter.svg" class="w-6 h-6" alt="Twitter (X)" /></a>
+                        <a href="#"><img src="images/icon-pinterest.svg" class="w-6 h-6" alt="Pinterest" /></a>
+                    </div>
+                    <div class="flex items-center justify-end flex-1 md:hidden">
+                        <div
+                            id="hidesharebutton"
+                            class="bg-fem-desaturatedDarkBlue rounded-full w-8 h-8 flex items-center justify-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                                <path
+                                    fill="#FFFFFF"
+                                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="triangle absolute bottom-[-12px] left-[36%] hidden md:block"></div>
+                </div>
+            </main>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://wims-frontendmentor-projects.netlify.app/" target="_blank">Wim Lemmens</a>.
+            </div>
+        </div>
+
+        <script>
+            const sharebutton = document.getElementById("sharebutton");
+            const sharepane = document.getElementById("sharepane");
+            const hidesharebutton = document.getElementById("hidesharebutton");
+            sharebutton.addEventListener("click", (event) => {
+                sharepane.classList.toggle("flex");
+                sharepane.classList.toggle("hidden");
+            });
+            hidesharebutton.addEventListener("click", (event) => {
+                sharepane.classList.toggle("flex");
+                sharepane.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>
